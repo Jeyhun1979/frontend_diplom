@@ -1,0 +1,132 @@
+.search-layout {
+  display: flex;
+  gap: 34px;
+  padding: 30px 0 60px;
+}
+
+.search-sidebar {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.results-count {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.results-sort select {
+  margin-left: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.pp-page {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e4e4e4;
+  background: #fff;
+  color: #292929;
+  font-weight: 700;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.pp-page--active {
+  background: #ffa800;
+  border-color: #ffa800;
+  color: #fff;
+}
+
+.pp-page--arrow {
+  font-weight: 900;
+}
+
+.pp-page:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.search-loading-screen {
+  min-height: 520px;
+  background: #3e3c45;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 60px;
+}
+
+.search-loading-screen__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.search-loading-screen__title {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  font-size: 16px;
+}
+
+.search-loading-screen__train {
+  width: 240px;
+  height: 28px;
+  background: #ffa800;
+  mask: url("/src/assets/icons/train.svg") center / contain no-repeat;
+  -webkit-mask: url("/src/assets/icons/train.svg") center / contain no-repeat;
+}
+
+.search-loading-screen__bar {
+  width: 320px;
+  height: 3px;
+  background: rgba(255, 168, 0, 0.25);
+}
+
+.search-loading-screen__bar-fill {
+  height: 100%;
+  background: #ffa800;
+  width: 0%;
+  transition: width 200ms linear;
+}
+
+.search-placeholder {
+  text-align: center;
+  color: #888;
+  margin-top: 40px;
+}
+
+.no-results {
+  text-align: center;
+  margin-top: 20px;
+}

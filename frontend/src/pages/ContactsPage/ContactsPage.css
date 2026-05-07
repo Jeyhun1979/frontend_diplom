@@ -1,0 +1,9 @@
+.contacts-page {
+  background: #f3f3f7;
+  min-height: 50vh;
+}
+
+.contacts-page__title {
+  text-align: left;
+  margin-bottom: 2rem;
+}

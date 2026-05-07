@@ -1,0 +1,763 @@
+/* SeatSelection.css */
+
+.seat-selection {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #d9d9df;
+  margin-left: 0;
+  padding: 22px 24px 28px;
+}
+
+/* ===== Верхний блок ===== */
+.ss-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+
+.ss-select-train-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  font-weight: 700;
+  color: #292929;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 14px;
+  border: solid 1px #292929;
+  border-radius: 2px;
+}
+
+.ss-select-train-icon {
+  margin-right: 4px;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  transform: rotate(180deg);
+}
+
+/* Другие поезда */
+.ss-other-trains {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.ss-other-train-item {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.ss-other-train-item:hover {
+  background: #fff0d0;
+}
+
+.ss-other-train-number {
+  font-weight: 700;
+}
+
+.ss-other-train-route {
+  font-size: 13px;
+  color: #666;
+}
+
+.ss-other-train-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #999;
+}
+
+.ss-arrow-icon {
+  width: 30px;
+  height: 20px;
+  object-fit: contain;
+  margin: 0 4px;
+}
+
+/* ===== Блок информации о поезде ===== */
+.ss-train-info {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.ss-train-info__part {
+  display: flex;
+}
+
+.part-1 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.part-2 {
+  flex: 2;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.part-3 {
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.ss-train-icon-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(68%) sepia(66%) saturate(1807%)
+    hue-rotate(0deg) brightness(103%) contrast(104%);
+}
+
+.ss-train-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.ss-train-number {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 2px;
+}
+
+.ss-train-route {
+  font-size: 16px;
+  color: #999;
+  line-height: 1.4;
+}
+
+.ss-time-block {
+  text-align: center;
+}
+
+.ss-time {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ss-city {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ss-station {
+  font-size: 16px;
+  color: #999;
+}
+
+.ss-time-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.ss-duration {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===== Количество билетов ===== */
+.ss-tickets-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.ss-tickets-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.ss-ticket-card {
+  flex: 1;
+  border: 1px solid #e4e4e4;
+  border-radius: 2px;
+  padding: 14px 14px 12px;
+  text-align: left;
+}
+
+.ss-ticket-select {
+  width: 100%;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.ss-ticket-hint {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  color: rgba(41, 41, 41, 0.55);
+  margin-top: 8px;
+}
+
+/* ===== Тип вагона ===== */
+.ss-wagon-type-title {
+  font-family: Roboto, system-ui, "Segoe UI", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #292929;
+  margin-bottom: 16px;
+}
+
+.ss-wagon-types {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ss-wagon-types button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.wagon-type-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.ss-wagon-types button.active {
+  background: transparent;
+  color: #ffa800;
+}
+
+.ss-wagon-types button.active .wagon-type-icon {
+  filter: brightness(0) saturate(100%) invert(68%) sepia(66%) saturate(1807%)
+    hue-rotate(0deg) brightness(103%) contrast(104%);
+}
+
+.ss-wagon-types button.disabled {
+  opacity: 0.65;
+  color: rgba(41, 41, 41, 0.55);
+  cursor: not-allowed;
+}
+
+.ss-wagon-types button.disabled .wagon-type-icon {
+  filter: grayscale(1) brightness(0.85);
+}
+
+/* ===== Блок выбора вагонов (сверху, отдельно) ===== */
+.ss-wagon-left {
+  background: #f6f6f6;
+  padding: 16px 24px;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  border: 1px solid #d9d9df;
+}
+
+.ss-wagons-switch {
+  margin-bottom: 12px;
+}
+
+.wagon-switch-label {
+  font-size: 14px;
+  color: #666;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.wagon-switch-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.wagon-switch-btn {
+  width: 50px;
+  height: 40px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.wagon-switch-btn.active {
+  background: #ffa800;
+  color: white;
+  border-color: #ffa800;
+}
+
+.ss-wagon-note {
+  font-size: 12px;
+  color: #999;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.ss-wagon-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: rgba(255, 168, 0, 0.35);
+  border: 1px solid rgba(255, 168, 0, 0.35);
+  border-radius: 2px;
+  padding: 14px 16px;
+}
+
+.ss-wagon-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ss-wagon-bar__title {
+  font-size: 14px;
+  color: rgba(41, 41, 41, 0.75);
+}
+
+.ss-wagon-bar__nums {
+  display: flex;
+  gap: 10px;
+}
+
+.ss-wagon-chip {
+  width: 46px;
+  height: 36px;
+  border-radius: 2px;
+  border: 1px solid #d9d9df;
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  color: #292929;
+  cursor: pointer;
+}
+
+.ss-wagon-chip--active {
+  background: #ffa800;
+  border-color: #ffa800;
+  color: #ffffff;
+}
+
+.ss-wagon-bar__note {
+  font-size: 12px;
+  color: rgba(41, 41, 41, 0.55);
+  text-align: right;
+  line-height: 120%;
+  max-width: 240px;
+}
+
+/* ===== Основная информация о вагоне (три колонки) ===== */
+.ss-wagon-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 0;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  flex-wrap: nowrap;
+  gap: 0;
+  border: 1px solid #d9d9df;
+  overflow: hidden;
+}
+
+.ss-wagons-multi {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.ss-wagon-section {
+  border-top: 1px solid rgba(41, 41, 41, 0.08);
+  padding-top: 18px;
+}
+
+.ss-wagon-section:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.ss-wagon-center {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.ss-wagon-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffa800;
+  line-height: 1;
+  min-width: 90px;
+}
+
+.ss-wagon-number span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  margin-left: 4px;
+}
+
+.ss-wagon-number-block {
+  width: 170px;
+  min-height: 130px;
+  background: rgba(255, 168, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 18px 18px;
+  box-sizing: border-box;
+  flex: 0 0 170px;
+}
+
+.ss-wagon-number-block .ss-wagon-number {
+  color: #292929;
+  font-size: 52px;
+}
+
+.ss-wagon-number-block .ss-wagon-number span {
+  color: rgba(41, 41, 41, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.ss-wagon-right {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 18px 18px;
+  min-width: 0;
+}
+
+.ss-wagon-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ss-wagon-col--seats {
+  min-width: 140px;
+}
+
+.ss-wagon-col--price {
+  min-width: 140px;
+}
+
+.ss-wagon-col--service {
+  min-width: 180px;
+  align-items: flex-start;
+}
+
+.ss-wagon-seats {
+  min-width: 100px;
+}
+
+.ss-wagon-seats-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.ss-wagon-stats {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.ss-wagon-stats strong {
+  color: #333;
+  font-weight: 700;
+}
+
+.ss-wagon-prices {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.price-label {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.price-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.ss-wagon-service {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.service-label {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.service-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 14px;
+  color: #666;
+}
+
+.service-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.service-icon-box {
+  width: 28px;
+  height: 28px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 168, 0, 0.5);
+  background: rgba(255, 168, 0, 0.18);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.ss-price-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ss-price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 14px;
+  color: rgba(41, 41, 41, 0.75);
+}
+
+.ss-price-row strong {
+  font-size: 16px;
+  color: #292929;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ===== Футер (количество людей) ===== */
+.ss-wagon-footer {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 12px 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.people-count {
+  font-size: 14px;
+  color: #ffa800;
+  font-weight: 500;
+}
+
+/* ===== Схема мест ===== */
+.ss-seats-scheme {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 2px;
+  padding: 14px 12px;
+  margin-bottom: 16px;
+}
+
+.ss-seats-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ss-seats-overlay {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 14px;
+  bottom: 14px;
+  display: grid;
+  grid-template-columns: repeat(var(--ss-overlay-cols, 16), 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  pointer-events: none;
+}
+
+.ss-seat-overlay {
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1;
+  pointer-events: auto;
+}
+
+.ss-seat-overlay--ghost {
+  opacity: 0;
+}
+
+.ss-seat-overlay--ghost.seat--available:hover {
+  opacity: 0.35;
+}
+
+.ss-seat-overlay--ghost.seat--selected {
+  opacity: 0.6;
+}
+
+.ss-seats-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.seat {
+  border: 1px solid #d7d7d7;
+  border-radius: 6px;
+  background: #ffffff;
+  padding: 8px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.seat--available:hover {
+  border-color: #ffa800;
+  background: #fff8e8;
+}
+
+.seat--selected {
+  background: #ffa800;
+  border-color: #ffa800;
+  color: #1f1f1f;
+}
+
+.seat--unavailable {
+  background: #f1f1f1;
+  border-color: #e0e0e0;
+  color: #9a9a9a;
+  cursor: not-allowed;
+}
+
+.ss-selected-info {
+  text-align: center;
+  font-size: 14px;
+  color: #ffa800;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.selected-seats-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.selected-seat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  color: #292929;
+}
+
+.selected-seat-row > span:first-child {
+  flex: 1 1 auto;
+  min-width: 220px;
+}
+
+.selected-seat-services {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  flex: 0 0 auto;
+  color: #292929;
+}
+
+.selected-seat-services label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  color: #292929;
+}
+
+.selected-seat-services input[type="checkbox"] {
+  margin: 0;
+}
+
+/* ===== Нижний повторяющийся блок ===== */
+.ss-footer-header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 32px 0 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.ss-footer-btn {
+  justify-content: flex-end;
+}
+
+.ss-footer-train-info {
+  border-bottom: none;
+  margin-bottom: 20px;
+}

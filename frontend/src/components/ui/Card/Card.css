@@ -1,0 +1,22 @@
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+
+.card--default {
+  border: 1px solid #e2e8f0;
+}
+
+.card--hoverable:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card--flat {
+  box-shadow: none;
+  border: 1px solid #e2e8f0;
+}

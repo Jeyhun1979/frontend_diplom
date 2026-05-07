@@ -1,0 +1,64 @@
+.passenger-page {
+  background: #f3f3f7;
+
+  min-height: 100vh;
+}
+
+.passenger-page__layout {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 180px;
+  gap: 50px;
+
+  align-items: flex-start;
+}
+
+.passenger-page__layout > :first-child {
+  flex: 0 0 320px;
+}
+
+.passenger-page__main {
+  flex: 1;
+  min-width: 0;
+}
+
+.passenger-page__title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+  color: #1a2c3e;
+  text-align: left;
+}
+
+.passenger-page__summary {
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: #fff;
+  border: 1px solid #d9d9df;
+  padding: 1.5rem;
+}
+
+.summary-card h3 {
+  margin-bottom: 1rem;
+  color: #1a2c3e;
+}
+
+.summary-card p {
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+}
+
+.summary-card .total-price {
+  font-weight: bold;
+  color: #ffa800;
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .passenger-page__layout {
+    flex-direction: column;
+  }
+}

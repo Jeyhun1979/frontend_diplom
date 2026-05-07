@@ -1,0 +1,121 @@
+.train-card {
+  display: flex;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  margin-bottom: 15px;
+}
+
+/* LEFT - центрируем всё содержимое */
+.train-card__left {
+  width: 180px;
+  background: #e6e6ea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px;
+  text-align: center;
+}
+
+.train-icon {
+  width: 86px;
+  height: 86px;
+  object-fit: contain;
+}
+
+.train-number {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+}
+
+.train-route {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+/* CENTER */
+.train-card__center {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.station {
+  text-align: center;
+}
+
+.time {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.city {
+  font-size: 14px;
+  color: #666;
+}
+
+.duration {
+  text-align: center;
+}
+
+.line {
+  width: 80px;
+  height: 2px;
+  background: #ccc;
+  margin: 5px auto;
+}
+
+.time-text {
+  font-size: 12px;
+  color: #999;
+}
+
+/* RIGHT */
+.train-card__right {
+  width: 240px;
+  border-left: 1px solid #eee;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.train-prices {
+  font-size: 14px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.train-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.free-seats {
+  font-size: 13px;
+  color: #666;
+}
+
+.select-btn {
+  background: #ffa800;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.select-btn:hover {
+  background: #e69600;
+}

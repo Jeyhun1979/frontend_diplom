@@ -1,0 +1,141 @@
+/* ReviewsSection.css */
+
+/* ReviewsSection.css */
+
+.home-section--gray {
+  background: #ffffff;
+}
+
+.reviews-split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 85px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.review-block {
+  flex: 1;
+  min-width: 280px;
+  background: #ffffff;
+  gap: 35px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+
+  transition: transform 0.2s;
+}
+
+.review-block:hover {
+  transform: translateY(-4px);
+  border-color: #0066cc30;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+.review-block__title {
+  margin-top: 8px;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #292929;
+}
+/* Аватар с фото */
+.review-block__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f0f7ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.review-block__avatar--lg {
+  width: 206px;
+  height: 207px;
+}
+
+.review-block__avatar--sm {
+  width: 200px;
+  height: 201px;
+}
+
+.review-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-block__content {
+  flex: 1;
+}
+
+.review-block__name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #292929;
+  margin-bottom: 12px;
+}
+
+.review-block__text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #292929;
+  margin: 0;
+}
+
+/* Пагинация точками */
+.reviews-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+  margin-bottom: -30px;
+}
+
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #cfdfed;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pagination-dot:hover {
+  background: #0066cc;
+  transform: scale(1.2);
+}
+
+.pagination-dot--active {
+  border-radius: 10px;
+  background: #0066cc;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .reviews-split {
+    flex-direction: column;
+  }
+
+  .review-block {
+    text-align: center;
+    align-items: center;
+  }
+
+  .review-block__text {
+    text-align: center;
+  }
+
+  .review-block__avatar {
+    width: 70px;
+    height: 70px;
+  }
+}

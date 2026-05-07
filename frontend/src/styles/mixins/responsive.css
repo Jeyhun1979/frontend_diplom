@@ -1,0 +1,44 @@
+/* Mobile First Breakpoints */
+/* sm: 640px, md: 768px, lg: 1024px, xl: 1280px, 2xl: 1536px */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Utility classes */
+.hide-on-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hide-on-mobile {
+    display: block;
+  }
+
+  .hide-on-tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
